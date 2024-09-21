@@ -6,6 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Milho du Bom – Feira da Escola</title>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+    <py-env>
+        {
+            "paths": ["py/main.py"]
+        }
+    </py-env>
 </head>
 <body>
 
@@ -72,6 +79,10 @@ sizes="(max-width: 600px) 480px,
             }
         }
     </script>
+        <py-script>
+            import main
+
+        </py-script>
     <div class="container">
         <!-- Nossa História -->
         <section id="historia">
