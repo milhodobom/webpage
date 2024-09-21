@@ -5,90 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Milho du Bom – Feira da Escola</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-        }
-        header {
-            background-image: url('https://drive.google.com/file/d/1VSkz5sh-DYMgkQ9fMnB4fit2oz4muLn5/view?usp=sharing');
-            background-size: cover;
-            text-align: center;
-            padding: 100px;
-            color: white;
-        }
-        header h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-        }
-        header p {
-            font-size: 1.5em;
-        }
-        .button {
-            background-color: #ffcc00;
-            color: #333;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-size: 1.2em;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px;
-        }
-        section {
-            margin-bottom: 40px;
-        }
-        h2 {
-            color: #ff9900;
-            text-align: center;
-            font-size: 2em;
-        }
-        p {
-            text-align: center;
-            font-size: 1.2em;
-        }
-        .products {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        .product {
-            background-color: white;
-            border: 1px solid #ddd;
-            padding: 20px;
-            width: 30%;
-            text-align: center;
-        }
-        .product img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
 </head>
 <body>
 
     <!-- Banner de Boas-Vindas -->
     <header>
-        <img src="img/5criancas.webp">
+        <!-- <img src="img/5criancas-desktop.webp"   srcset="images/celular.jpg 480w,
+        images/tablet.jpg 768w,
+        images/5criancas-desktop.webp 1200w"
+alt="Imagem Responsiva"
+sizes="(max-width: 600px) 480px,
+       (max-width: 1200px) 768px,
+       1200px"> -->
+       
             <h1>Milho du Bom</h1>
             <p>Sabores fresquinhos de milho para todos!</p>
             <a href="#produtos" class="button">Compre Agora!</a>
-        </img>
+        <!-- </img> -->
     </header>
+    <h1>Capturar Localização e Salvar em Arquivo</h1>
+    <a id="downloadLink" style="display: none;">Baixar Localização</a>
 
+    <script>
+        // Quando a página carregar, solicita a localização
+        window.onload = function() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(saveLocationToFile, showError);
+            } else {
+                alert("Geolocalização não é suportada pelo seu navegador.");
+            }
+        };
+
+        // Função que salva a localização em um arquivo .txt
+        function saveLocationToFile(position) {
+            var latitude = position.coords.latitude;
+            var longitude = position.coords.longitude;
+            var data = `Latitude: ${latitude}\nLongitude: ${longitude}`;
+            
+            // Criar um arquivo Blob
+            var blob = new Blob([data], { type: 'text/plain' });
+            
+            // Criar um link para download
+            var link = document.getElementById('downloadLink');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'localizacao.txt';
+            link.style.display = 'inline';
+            link.textContent = 'Clique aqui para baixar o arquivo com a localização';
+        }
+
+        // Função que trata erros de geolocalização
+        function showError(error) {
+            switch (error.code) {
+                case error.PERMISSION_DENIED:
+                    alert("Permissão negada para obter localização.");
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert("Informação de localização indisponível.");
+                    break;
+                case error.TIMEOUT:
+                    alert("A requisição de localização expirou.");
+                    break;
+                case error.UNKNOWN_ERROR:
+                    alert("Ocorreu um erro desconhecido.");
+                    break;
+            }
+        }
+    </script>
     <div class="container">
         <!-- Nossa História -->
         <section id="historia">
