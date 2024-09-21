@@ -6,83 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Milho du Bom – Feira da Escola</title>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
 
-    <py-env>
-        {
-            "paths": ["py/main.py"]
-        }
-    </py-env>
 </head>
+
+
 <body>
 
     <!-- Banner de Boas-Vindas -->
-    <header>
-        <!-- <img src="img/5criancas-desktop.webp"   srcset="images/celular.jpg 480w,
-        images/tablet.jpg 768w,
-        images/5criancas-desktop.webp 1200w"
-alt="Imagem Responsiva"
-sizes="(max-width: 600px) 480px,
-       (max-width: 1200px) 768px,
-       1200px"> -->
-       
+    <header>       
             <h1>Milho du Bom</h1>
             <p>Sabores fresquinhos de milho para todos!</p>
             <a href="#produtos" class="button">Compre Agora!</a>
-        <!-- </img> -->
+      
     </header>
-    <h1>Capturar Localização e Salvar em Arquivo</h1>
-    <a id="downloadLink" style="display: none;">Baixar Localização</a>
+ 
 
-    <script>
-        // Quando a página carregar, solicita a localização
-        window.onload = function() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(saveLocationToFile, showError);
-            } else {
-                alert("Geolocalização não é suportada pelo seu navegador.");
-            }
-        };
-
-        // Função que salva a localização em um arquivo .txt
-        function saveLocationToFile(position) {
-            var latitude = position.coords.latitude;
-            var longitude = position.coords.longitude;
-            var data = `Latitude: ${latitude}\nLongitude: ${longitude}`;
-            
-            // Criar um arquivo Blob
-            var blob = new Blob([data], { type: 'text/plain' });
-            
-            // Criar um link para download
-            var link = document.getElementById('downloadLink');
-            link.href = URL.createObjectURL(blob);
-            link.download = 'localizacao.txt';
-            link.style.display = 'inline';
-            link.textContent = 'Clique aqui para baixar o arquivo com a localização';
-        }
-
-        // Função que trata erros de geolocalização
-        function showError(error) {
-            switch (error.code) {
-                case error.PERMISSION_DENIED:
-                    alert("Permissão negada para obter localização.");
-                    break;
-                case error.POSITION_UNAVAILABLE:
-                    alert("Informação de localização indisponível.");
-                    break;
-                case error.TIMEOUT:
-                    alert("A requisição de localização expirou.");
-                    break;
-                case error.UNKNOWN_ERROR:
-                    alert("Ocorreu um erro desconhecido.");
-                    break;
-            }
-        }
-    </script>
-        <py-script>
-            import main
-
-        </py-script>
     <div class="container">
         <!-- Nossa História -->
         <section id="historia">
