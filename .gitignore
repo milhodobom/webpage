@@ -1,0 +1,5 @@
+# Ignorar as chaves SSH privadas e públicas nomeadas "alessandro-pessoa"
+alessandro-pessoa
+alessandro-pessoa.pub
+id_ed25519
+dadosRepo.txt
