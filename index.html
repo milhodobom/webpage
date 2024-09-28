@@ -1,76 +1,424 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Milho du Bom – Feira da Escola</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css"/>
-
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<body>
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Milho du Bom</title>
 
-    <!-- Banner de Boas-Vindas -->
-    <header>       
-            <h1>Milho du Bom</h1>
-            <p>Sabores fresquinhos de milho para todos!</p>
-            <a href="#alunosID" class="button">Compre Agora!</a>
-      
-    </header>
- 
 
-    <div class="container">
-        <!-- Nossa História -->
-        <section id="historia">
-            <h2>Nossa História</h2>
-            <p>O projeto "Milho du Bom" foi criado pela nossa pequena empreendedora de 7 anos
-                para incentivar habilidades empreendedoras desde cedo. A ideia nasceu durante as aulas 
-                sobre agricultura e alimentação saudável, e agora queremos trazer esse sabor natural para você!</p>
-        </section>
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
 
-        <!-- Produtos -->
-        <section id="alunosID">
-            <h2>Time </h2>
-            <div class="p">
-                <div class="alunos">
-                    <img src="/img/3criancas2Negrase1branca.jpeg" alt="Milho Cozido Tradicional">
-                    <h3>Milho Cozido Tradicional</h3>
-                    <p>Milho cozido com uma pitada de sal.</p>
-                </div>
-                <div class="alunos">
-                    <img src="/img/3criancas2Negrase1branca.jpeg" alt="Milho Assado">
-                    <h3>Milho Assado</h3>
-                    <p>Crocante e saboroso direto da grelha.</p>
-                </div>
-                <div class="alunos">
-                    <img src="/img/3criancas2Negrase1branca.jpeg" alt="Milho com Manteiga">
-                    <h3>Milho com Manteiga</h3>
-                    <p>Milho cozido coberto com manteiga derretida.</p>
-                </div>
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="assets/css/theme.css" rel="stylesheet" />
+
+  </head>
+
+
+  <body >
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"> </span></button>
+          <div class="collapse navbar-collapse border-top border-lg-0 mt-4 mt-lg-0" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto pt-2 pt-lg-0 font-base align-items-lg-center align-items-start">
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#service">Bento</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#service">Clara</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#service">Davi</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#service">Isaac</a></li>
+              <li class="nav-item px-3 px-xl-4"><a class="nav-link fw-medium" aria-current="page" href="#service">Maria</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section style="padding-top: 7rem;">
+        <div class="bg-holder" style="background-image:url(assets/img/hero/hero-bg.svg);">
+        </div>
+        <!--/.bg-holder-->
+
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-5 col-lg-6 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 hero-img" src="assets/img/hero/parte1.png" alt="hero-header" /></div>
+            <div class="col-md-7 col-lg-6 text-md-start text-center py-6">
+              <h4 class="fw-bold text-danger mb-3">Best Destinations around the world</h4>
+              <h1 class="hero-title"> Invista no Futuro dos Nossos Jovens Empreendedores</h1>
+              <p class="mb-4 fw-medium">No dia 20 de outubro, nossos alunos vão participar de um proheto na Feira de Empreendedorismo da Escola.
+                Com um investimento minimo de R$3, você apoia diretamente o desenvolvimento da educação e das habilidades empreendedoras dessas mentes briljantes.
+              </p>
+
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- Como Comprar -->
-        <section id="como-comprar">
-            <h2>Como Comprar</h2>
-            <p>Você pode encontrar nosso milho na feira da escola no próximo sábado, a partir das 10h. 
-                Venha cedo para garantir o seu!</p>
-        </section>
 
-        <!-- Apoie Nosso Pequeno Empreendimento -->
-        <section id="apoio">
-            <h2>Apoie Nosso Pequeno Empreendimento</h2>
-            <p>Apoie o espírito empreendedor das nossas crianças! Todo o lucro será reinvestido em futuros projetos educacionais.</p>
-        </section>
-    </div>
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-5 pt-md-9" id="service">
 
-    <!-- Rodapé -->
-    <footer>
-        <p>Feira da Escola  - Sábado, 10h às 14h - Local: Pátio Principal</p>
-        <p>Email: milhodobomgrupo3@gmail.com</p>
-    </footer>
+        <div class="container">
+          <div class="position-absolute z-index--1 end-0 d-none d-lg-block"><img src="assets/img/category/shape.svg" style="max-width: 200px" alt="service" /></div>
+          <div class="mb-7 text-center">
+            <h5 class="text-secondary">Fundadores </h5>
+            <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">O Time</h3>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-sm-6 mb-6">
+              <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+                <div class="card-body p-xxl-5 p-4"> <img src="assets/img/category/bento.png" width="75" alt="Service" />
+                  <h4 class="mb-3">Bento</h4>
+                  <p class="mb-0 fw-medium">Idealizador de tecnologias no cultivo de Milho.</p>
+                </div>
+              </div>
+            </div>
 
-</body>
+            <div class="col-lg-3 col-sm-6 mb-6">
+              <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+                <div class="card-body p-xxl-5 p-4"> <img src="assets/img/category/clara.png" width="75" alt="Service" />
+                  <h4 class="mb-3">Clara</h4>
+                  <p class="mb-0 fw-medium">Criadora da cultura de dados e inovação tecnologica.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-6">
+              <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+                <div class="card-body p-xxl-5 p-4"> <img src="assets/img/category/davi.png" width="75" alt="Service" />
+                  <h4 class="mb-3">Davi</h4>
+                  <p class="mb-0 fw-medium">Renponsavel pela implantação do ESG (Enviroment, Social and Governamental).</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-6">
+              <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+                <div class="card-body p-xxl-5 p-4"> <img src="assets/img/category/isaac.png" width="75" alt="Service" />
+                  <h4 class="mb-3">Isaac</h4>
+                  <p class="mb-0 fw-medium">Pesquisador Senior em nanotecnologia e transgênicos</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6 mb-6">
+              <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+                <div class="card-body p-xxl-5 p-4"> <img src="assets/img/category/maria.png" width="75" alt="Service" />
+                  <h4 class="mb-3">Maria</h4>
+                  <p class="mb-0 fw-medium">Desenvolvedora de produtos e negócios.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-5" id="destination">
+
+        <div class="container">
+          <div class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4"><img src="assets/img/dest/shape.svg" alt="destination" /></div>
+          <div class="mb-7 text-center">
+            <h5 class="text-secondary">Invista RS 3 ou mais. </h5>
+            <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Essa é uma ideia que vale a Pena!</h3>
+          </div>
+
+          <div class="row">
+            <div class="col-md-4 mb-4">
+              <div class="card overflow-hidden shadow"> 
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/7nFcP_lDsFo?si=zRJqC6snUO2AjilJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                <div class="card-body py-4 px-3">
+                  <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
+                    <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="#!">Bento</a></h4><span class="fs-1 fw-medium"></span>
+                  </div>
+                  <div class="d-flex align-items-center"> <img src="assets/img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span class="fs-0 fw-medium">
+                    Chave PIX:
+                    <input value="alberto.calile@gmail.com" readonly></input>
+                  </span></div>
+                </div>
+              </div>
+            </div>
+
+
+              <div class="col-md-4 mb-4">
+                <div class="card overflow-hidden shadow"> 
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/5JCa-U4BW14?si=vzWgPFC3g9WrYql0" 
+                  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+              </iframe>
+  
+                  <div class="card-body py-4 px-3">
+                    <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
+                      <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="#!">Clara</a></h4><span class="fs-1 fw-medium"></span>
+                    </div>
+                    <div class="d-flex align-items-center"> <img src="assets/img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span class="fs-0 fw-medium">
+                      Chave PIX:
+                      <input value="05109682526" readonly></input>
+                    </span></div>
+                  </div>
+                </div>
+              </div>
+            
+
+                <div class="col-md-4 mb-4">
+
+                  <div class="card overflow-hidden shadow"> 
+                    <div class="alunos"> 
+                      <iframe width="560" height="315" src="https://www.youtube.com/embed/1ZizhChru88?si=EhxN-VIHJkZBMfH1"  
+                          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                      </iframe>
+
+                    <div class="card-body py-4 px-3">
+                      <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
+                        <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="#!">Davi</a></h4><span class="fs-1 fw-medium"></span>
+                      </div>
+                      <div class="d-flex align-items-center"> <img src="assets/img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span class="fs-0 fw-medium">
+                        Chave PIX:
+                        <input value="2199721112291" readonly></input>
+                      </span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-md-4 mb-4">
+
+                <div class="card overflow-hidden shadow"> 
+                  <div class="alunos"> 
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vA-iQ5C5Tu4?si=aRdFo7CWpMWq3DgD" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+
+                  <div class="card-body py-4 px-3">
+                    <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
+                      <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="#!">Isaac</a></h4><span class="fs-1 fw-medium"></span>
+                    </div>
+                    <div class="d-flex align-items-center"> <img src="assets/img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span class="fs-0 fw-medium">
+                      Chave PIX:
+                      <input value="e70bfd41-57dd-4d02-b743-7d7cbe69e0f7" readonly></input>
+                    </span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+
+              <div class="card overflow-hidden shadow"> 
+                <div class="alunos"> 
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/fT4xT7-UJCo?si=FT4sDhJSSnP5j8oM" title="YouTube video player" 
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+
+
+                <div class="card-body py-4 px-3">
+                  <div class="d-flex flex-column flex-lg-row justify-content-between mb-3">
+                    <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="#!">Maria</a></h4><span class="fs-1 fw-medium"></span>
+                  </div>
+                  <div class="d-flex align-items-center"> <img src="assets/img/dest/navigation.svg" style="margin-right: 14px" width="20" alt="navigation" /><span class="fs-0 fw-medium">
+                    Chave PIX:
+                    <input value="2199721112291" readonly></input>
+                  </span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+                
+
+
+
+
+          
+              </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+  
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section id="testimonial">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="mb-8 text-start">
+                <h5 class="text-secondary">Testemunhos </h5>
+                <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Quem Investe, Aprova!</h3>
+              </div>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6">
+              <div class="pe-7 ps-5 ps-lg-0">
+                <div class="carousel slide carousel-fade position-static" id="testimonialIndicator" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-target="#testimonialIndicator" data-bs-slide-to="0" aria-current="true" aria-label="Testimonial 0"></button>
+                    <button class="false" type="button" data-bs-target="#testimonialIndicator" data-bs-slide-to="1" aria-current="true" aria-label="Testimonial 1"></button>
+                    <button class="false" type="button" data-bs-target="#testimonialIndicator" data-bs-slide-to="2" aria-current="true" aria-label="Testimonial 2"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item position-relative active">
+                      <div class="card shadow" style="border-radius:10px;">
+                        <div class="position-absolute start-0 top-0 translate-middle"> <img class="rounded-circle fit-cover" src="assets/img/testimonial/author.png" height="65" width="65" alt="" /></div>
+                        <div class="card-body p-4">
+                          <p class="fw-medium mb-4">&quot;Uma empresa que investe em sustentabilidade e tem produtos incriveis.&quot;</p>
+                          <h5 class="text-secondary">Mike taylor</h5>
+                          <p class="fw-medium fs--1 mb-0">Bahia, Brasil</p>
+                        </div>
+                      </div>
+                      <div class="card shadow-sm position-absolute top-0 z-index--1 mb-3 w-100 h-100" style="border-radius:10px;transform:translate(25px, 25px)"> </div>
+                    </div>
+                    <div class="carousel-item position-relative ">
+                      <div class="card shadow" style="border-radius:10px;">
+                        <div class="position-absolute start-0 top-0 translate-middle"> <img class="rounded-circle fit-cover" src="assets/img/testimonial/author2.png" height="65" width="65" alt="" /></div>
+                        <div class="card-body p-4">
+                          <p class="fw-medium mb-4">&quot;Diferente de tudo que já vi! Òtimos  produtos, vc come e que mais .&quot;</p>
+                          <h5 class="text-secondary">Thomas Wagon</h5>
+                          <p class="fw-medium fs--1 mb-0">Espanha</p>
+                        </div>
+                      </div>
+                      <div class="card shadow-sm position-absolute top-0 z-index--1 mb-3 w-100 h-100" style="border-radius:10px;transform:translate(25px, 25px)"> </div>
+                    </div>
+                    <div class="carousel-item position-relative ">
+                      <div class="card shadow" style="border-radius:10px;">
+                        <div class="position-absolute start-0 top-0 translate-middle"> <img class="rounded-circle fit-cover" src="assets/img/testimonial/author3.png" height="65" width="65" alt="" /></div>
+                        <div class="card-body p-4">
+                          <p class="fw-medium mb-4">&quot;Dificil é querer só um! Excelentes produtos.&quot;</p>
+                          <h5 class="text-secondary">Kelly Willium</h5>
+                          <p class="fw-medium fs--1 mb-0"> São Paulo, Brasil</p>
+                        </div>
+                      </div>
+                      <div class="card shadow-sm position-absolute top-0 z-index--1 mb-3 w-100 h-100" style="border-radius:10px;transform:translate(25px, 25px)"> </div>
+                    </div>
+                  </div>
+                  <div class="carousel-navigation d-flex flex-column flex-between-center position-absolute end-0 top-lg-50 bottom-0 translate-middle-y z-index-1 me-3 me-lg-0" style="height:60px;width:20px;">
+                    <button class="carousel-control-prev position-static" type="button" data-bs-target="#testimonialIndicator" data-bs-slide="prev"><img src="assets/img/icons/up.svg" width="16" alt="icon" /></button>
+                    <button class="carousel-control-next position-static" type="button" data-bs-target="#testimonialIndicator" data-bs-slide="next"><img src="assets/img/icons/down.svg" width="16" alt="icon" /></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+  
+
+
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pb-0 pb-lg-4">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-7 col-12 mb-4 mb-md-6 mb-lg-0 order-0"> 
+              <p class="fs--1 text-secondary mb-0 fw-medium">Milho Du Bom Enterprise.</p>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-1 order-md-2">
+              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">MAIS</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Trabalh Conosco</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">ESG</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Relacionamento Com Investidores (RI)</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-2 order-md-3">
+              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Contato</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="#!">Email: milhodobomgrupo3@gmail.com</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-3 order-md-4">
+
+            </div>
+            <div class="col-lg-3 col-md-5 col-12 mb-4 mb-md-6 mb-lg-0 order-lg-4 order-md-1">
+              <div class="icon-group mb-4"> 
+                <a class="text-decoration-none icon-item shadow-social" id="facebook" href="https://github.com/milhodobom/webpage"><i class="fab fa-github"> </i></a>
+                <a class="text-decoration-none icon-item shadow-social" id="instagram" href="https://www.youtube.com/@MilhodoBom"><i class="fab fa-youtube"> </i></a>
+
+            </div>
+              <h4 class="fw-medium font-sans-serif text-secondary mb-3">Em embre estaremos na</h4>
+              <div class="d-flex align-items-center"> <a href="#!"> <img class="me-2" src="assets/img/play-store.png" alt="play store" /></a><a href="#!"> <img src="assets/img/apple-store.png" alt="apple store" /></a></div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <div class="py-5 text-center">
+        <p class="mb-0 text-secondary fs--1 fw-medium">All rights reserved@jadoo.co </p>
+      </div>
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <script src="vendors/@popperjs/popper.min.js"></script>
+    <script src="vendors/bootstrap/bootstrap.min.js"></script>
+    <script src="vendors/is/is.min.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll"></script>
+    <script src="vendors/fontawesome/all.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap" rel="stylesheet">
+  </body>
+
 </html>
